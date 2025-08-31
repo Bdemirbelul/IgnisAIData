@@ -81,8 +81,14 @@ Mobil uygulama entegrasyonu: vatandaşların bölgesel riskleri görebilmesi.
 
 data/ → yıllık CSV verileri
 
+# Algortima yapısı 
 
+Modelin algoritmik yapısı da dikkat çekici bir şekilde tasarlandı. İlk aşamalarda basit sınıflandırma ve regresyon yöntemleriyle (Logistic Regression, Random Forest, XGBoost) farklı senaryolar test edildi. Ancak bu yöntemler yalnızca anlık ilişkilere odaklandığından, zaman serilerinde meydana gelen değişimleri yakalamakta yetersiz kaldı. Bu nedenle model, daha ileri bir yapay zeka yaklaşımı olan LSTM (Long Short-Term Memory) tabanlı sinir ağı ile geliştirildi. LSTM, geçmiş günlerin meteorolojik koşullarını ve arazi değişkenlerini dikkate alarak gelecekteki yangın riskini daha iyi tahmin edebiliyor. Bu yapı sayesinde model yalnızca “şu anda risk var mı?” sorusuna değil, aynı zamanda “önümüzdeki günlerde risk nasıl değişecek?” sorusuna da cevap verebiliyor.
 
+Algoritma, her grid hücresi için 0 ile 100 arasında bir risk skoru üretiyor. Bu skorlar, görselleştirme aşamasında yeşilden kırmızıya uzanan bir renk skalasına dönüştürülüyor. Böylece düşük riskli bölgeler yeşil, orta riskli bölgeler sarı, yüksek riskli bölgeler ise kırmızı olarak harita üzerinde işaretleniyor. Bu görsel yaklaşım, karar vericilerin hızlıca riskli bölgeleri tespit etmesini sağlıyor.
 
+Proje şu an hâlâ beta aşamasında. Doğru tahminler üretse de kimi zaman hatalı sonuçlar verebiliyor. Bunun nedeni hem veri kaynaklarının çeşitliliği hem de bazı parametrelerin henüz tam oturmamış olmasıdır. Ancak geliştirme süreci aktif olarak devam ediyor. 2026 yazına kadar, 2020–2025 yıllarına ait tüm veriler işlenmiş olacak ve tam algoritma kodları ile birlikte GitHub reposuna yüklenecek. Böylece araştırmacılar, öğrenciler ve meraklılar modeli indirip kendi bilgisayarlarında çalıştırabilecek, farklı senaryoları test edebilecek.
+
+Bu sayede proje yalnızca akademik bir çalışma olmanın ötesine geçerek, açık kaynak topluluğunun katkılarıyla daha da gelişebilecek bir yapıya kavuşacak.
 
 
