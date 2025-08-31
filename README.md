@@ -96,8 +96,10 @@ Modelin algoritmik yapısı da dikkat çekici bir şekilde tasarlandı. İlk aş
 Algoritma, her grid hücresi için 0 ile 100 arasında bir risk skoru üretiyor. Bu skorlar, görselleştirme aşamasında yeşilden kırmızıya uzanan bir renk skalasına dönüştürülüyor. Böylece düşük riskli bölgeler yeşil, orta riskli bölgeler sarı, yüksek riskli bölgeler ise kırmızı olarak harita üzerinde işaretleniyor. Bu görsel yaklaşım, karar vericilerin hızlıca riskli bölgeleri tespit etmesini sağlıyor.
 
 Proje şu an hâlâ beta aşamasında. Doğru tahminler üretse de kimi zaman hatalı sonuçlar verebiliyor. Bunun nedeni hem veri kaynaklarının çeşitliliği hem de bazı parametrelerin henüz tam oturmamış olmasıdır. Ancak geliştirme süreci aktif olarak devam ediyor. 2026 yazına kadar, 2020–2025 yıllarına ait tüm veriler işlenmiş olacak ve tam algoritma kodları ile birlikte GitHub reposuna yüklenecek. Böylece araştırmacılar, öğrenciler ve meraklılar modeli indirip kendi bilgisayarlarında çalıştırabilecek, farklı senaryoları test edebilecek.
+<img width="1633" height="1305" alt="output" src="https://github.com/user-attachments/assets/2e14b193-9bff-4f59-b472-1d2015d5351b" />
 
 Bu sayede proje yalnızca akademik bir çalışma olmanın ötesine geçerek, açık kaynak topluluğunun katkılarıyla daha da gelişebilecek bir yapıya kavuşacak.
 
+# Sonuç görüntüsü 
 
 
