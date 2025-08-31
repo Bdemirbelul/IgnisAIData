@@ -5,7 +5,15 @@ Bu proje, Türkiye genelinde 0.25° grid yapısı kullanılarak 2020–2025 yıl
 
 Amaç, hem önleyici erken uyarı sistemi geliştirmek hem de gelecekteki yangın risklerini görselleştirmek.
 
+## 📊 Veri Kaynakları
 
+| Kategori | Parametreler | Kaynak / Link |
+|----------|--------------|----------------|
+| 🔥 Yangın Geçmişi | Yangın lokasyonları, tarih, yoğunluk | [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/country/) |
+| 🌦️ Meteoroloji | Sıcaklık (min–max–ortalama), Nem, Rüzgâr hızı & yönü, Yağış, Buharlaşma, Güneşlenme süresi | [MGM](https://www.mgm.gov.tr/), [Open-Meteo API](https://open-meteo.com/en/docs/historical-weather-api) |
+| 🌍 Arazi & Bitki Örtüsü | Arazi örtüsü sınıfları, orman yoğunluğu, toprak türü, eğim (slope), bakı (aspect) | [Copernicus Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), [Global Forest Change](https://earthenginepartners.appspot.com/science-2013-global-forest), [Copernicus DEM](https://registry.opendata.aws/copernicus-dem/), [Google Earth Engine Datasets](https://developers.google.com/earth-engine/datasets) |
+| ⏳ Zaman Faktörleri | Gün, ay, mevsim, hafta içi/hafta sonu, resmî tatiller | [Mevzuat Takvimi](https://www.mevzuat.gov.tr/), Python `datetime` |
+ 
 ### 1. Yangın Geçmişi
 NASA FIRMS (Fire Information for Resource Management System)
 https://firms.modaps.eosdis.nasa.gov/country/
@@ -92,13 +100,4 @@ Proje şu an hâlâ beta aşamasında. Doğru tahminler üretse de kimi zaman ha
 Bu sayede proje yalnızca akademik bir çalışma olmanın ötesine geçerek, açık kaynak topluluğunun katkılarıyla daha da gelişebilecek bir yapıya kavuşacak.
 
 
-# Verilerin alınması 
 
-## 📊 Veri Kaynakları
-
-| Kategori | Parametreler | Kaynak / Link |
-|----------|--------------|----------------|
-| 🔥 Yangın Geçmişi | Yangın lokasyonları, tarih, yoğunluk | [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/country/) |
-| 🌦️ Meteoroloji | Sıcaklık (min–max–ortalama), Nem, Rüzgâr hızı & yönü, Yağış, Buharlaşma, Güneşlenme süresi | [MGM](https://www.mgm.gov.tr/), [Open-Meteo API](https://open-meteo.com/en/docs/historical-weather-api) |
-| 🌍 Arazi & Bitki Örtüsü | Arazi örtüsü sınıfları, orman yoğunluğu, toprak türü, eğim (slope), bakı (aspect) | [Copernicus Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), [Global Forest Change](https://earthenginepartners.appspot.com/science-2013-global-forest), [Copernicus DEM](https://registry.opendata.aws/copernicus-dem/), [Google Earth Engine Datasets](https://developers.google.com/earth-engine/datasets) |
-| ⏳ Zaman Faktörleri | Gün, ay, mevsim, hafta içi/hafta sonu, resmî tatiller | [Mevzuat Takvimi](https://www.mevzuat.gov.tr/), Python `datetime` |
